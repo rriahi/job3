@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/person.xml' outStruct='Structures/Jobs/jobthmap/tHMap_1/out.xml' inputRep='177' outputRep='178' nextMap='' inputStructUserName='person' outputStructUserName='out' V1='4' name='tHMap_1' incarnation='137'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='person'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='first_name'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='last_name'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='phone'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='mail'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='9' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/person,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='16' V200='8' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/person/Row,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='17' V200='8' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='a'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/person/Row/first_name</value>
+      </child>
+      <child t='200' id='18' V200='8' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='b'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/person/Row/mail</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='10' V697='1' V690='1' padOutput='true' encoding='UTF-8'>
+  </inputRepRuntime>
+  <outputRepRuntime t='698' id='11' V698='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <child t='165' id='12' V1='4' name='Document Bindings'>
+    <child t='166' id='13' V166='5' docType='1' docReposPath='/TDMTEST/Sample Data/person/person' V1='4' name='in$/person'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='14' V166='5' docType='2' V1='4' name='out$/root'>
+      <elemNode t='200' idref='9'/>
+    </child>
+  </child>
+  <child t='201' id='15' V1='4' name='Inherits From'>
+  </child>
+</root>
